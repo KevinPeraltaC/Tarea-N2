@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rostro geometrico</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #rostro {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: aquamarine; 
+            position: relative;
+        }
+        #ojo1, #ojo2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 25%;
+        }
+        #ojo1 {
+            left: 20%;
+        }
+        #ojo2 {
+            right: 20%;
+        }
+        #nariz {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: purple; 
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #boca {
+            width: 100px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="rostro">
+        <div id="ojo1"></div>
+        <div id="ojo2"></div>
+        <div id="nariz"></div>
+        <div id="boca"></div>
+    </div>
+</body>
+</html>
+
+
